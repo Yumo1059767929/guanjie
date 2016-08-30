@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>游戏中心</title>
+    <link rel="stylesheet" type="text/css" href="publish/css/base.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/bootstrap.min.css">
+    <link rel="stylesheet" href="publish/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/l_games.css">
+</head>
+
+<body>
+    <div class="wrap">
+       <div class="l_game_banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/l_games_banner.png"></div>
+                    <div class="swiper-slide"><img src="images/l_games_banner.png"></div>
+                    <div class="swiper-slide"><img src="images/l_games_banner.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+       </div>
+       <div class="games_box">
+            <ul>
+                <li><a href="#"><img src="images/game_list.png"></a></li>
+                <li><a href="#"><img src="images/game_list.png"></a></li>
+                <li><a href="#"><img src="images/game_list.png"></a></li>
+            </ul>
+       </div>
+    </div>
+    <script src="publish/js/jquery-1.8.3.min.js"></script>
+    <script src="publish/js/common.js"></script>
+    <script src="publish/js/swiper.min.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000,
+            loop : true,
+            loopAdditionalSlides : 2,
+            pagination : '.swiper-pagination',
+        })
+    </script>
+</body>
+
+</html>

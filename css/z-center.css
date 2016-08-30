@@ -1,0 +1,124 @@
+#z-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*轮播*/
+
+.swiper-container {
+    width: 6.4rem;
+    height: 4rem;
+    position: relative;
+}
+
+.swiper-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    text-align: right;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+
+/*ID头像*/
+
+.z-idTx {
+    position: absolute;
+    top: .22rem;
+    right: .18rem;
+    z-index: 999999;
+}
+
+.z-ID {
+    font-size: .2rem;
+    color: #fff;
+    float: left;
+    line-height: .56rem;
+    margin-right: .16rem;
+}
+
+.z-TX {
+    width: .56rem;
+    height: .56rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    float: left;
+    overflow: hidden;
+}
+
+.z-TX img {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*公告*/
+
+.z-gg {
+    width: 100%;
+    height: .5rem;
+    background: #fafafa;
+    font-size: .2rem;
+    color: #0a6693;
+    line-height: .5rem;
+    padding: 0 .16rem;
+}
+
+
+/*功能*/
+
+.z-Function {
+    display: block;
+    width: 100%;
+    height: 1.4rem;
+    padding: .16rem 0;
+    text-align: center;
+}
+
+.z-Function img {
+    width: .54rem;
+    height: .56rem;
+    margin-bottom: .16rem;
+}
+
+.zFun-tit {
+    font-size: .2rem;
+    color: #323232;
+    text-align: center;
+}
+
+
+/*分类*/
+
+.z-FL {
+    border-top: 1px solid #ededed;
+}
+
+.z-FL div {
+    border-bottom: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    text-align: center;
+    padding-top: .17rem;
+}
+
+.z-FL img {
+    width: .73rem;
+    height: .73rem;
+}
+
+.zFL-tit {
+    font-size: .24rem;
+    color: #323232;
+    line-height: .4rem;
+}

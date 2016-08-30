@@ -1,0 +1,190 @@
+#z-wrap {
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+}
+
+
+/*轮播*/
+
+.swiper-container {
+    width: 6.4rem;
+    height: 3rem;
+}
+
+.swiper-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+
+/*表单提交*/
+
+.z-register {
+    width: 100%;
+    height: 100%;
+}
+
+.z-register li {
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ededed;
+    padding-left: .16rem;
+    font-size: .24rem;
+}
+
+.z-register li div {
+    padding: 0;
+    line-height: 1rem;
+    color: #3c3c3c;
+}
+
+.z-register .z-name input {
+    width: auto;
+    height: .7rem;
+    border: none;
+    line-height: .7rem;
+    vertical-align: middle;
+    color: #0a6693;
+}
+
+.z-number input {
+    width: auto;
+    /*    height: .7rem;*/
+    border: none;
+    line-height: .7rem;
+    vertical-align: middle;
+    color: #999999;
+}
+
+.z-yzm input {
+    width: auto;
+    height: .7rem;
+    border: none;
+    line-height: .7rem;
+    vertical-align: middle;
+}
+
+.z-register .zF {
+    height: 1rem;
+    position: relative;
+}
+
+#z-wrap .z-register input::-webkit-file-upload-button {
+    width: .9rem;
+    height: .9rem;
+    border: none;
+    border-radius: .3rem;
+    margin-top: .03rem;
+    position: absolute;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.z-register .zF .image_container {
+    position: absolute;
+    width: .9rem;
+    height: .9rem;
+    border: none;
+    border-radius: .3rem;
+    margin-top: .03rem;
+}
+
+.z-register .zF .image_container #preview {
+    position: absolute;
+    display: inline-block;
+    width: .9rem;
+    height: .9rem;
+    border-radius: .3rem;
+    margin-top: .03rem;
+    border: 0;
+}
+
+.z-register .zGET {
+    display: block;
+    width: 1.5rem;
+    height: .5rem;
+    border-radius: .1rem;
+    background: none;
+    border: 1px solid #0a6693;
+    color: #0a6693;
+    margin-top: .22rem;
+    overflow: hidden;
+    line-height: .5rem;
+    font-size: .2rem;
+}
+
+.zSEX input {
+    vertical-align: text-bottom;
+    margin: 0 .5rem 0 .2rem;
+}
+
+.zAddress {
+    height: 1rem;
+}
+
+.zAddress input {
+    border: none;
+    width: 100%;
+    height: .7rem;
+    vertical-align: middle;
+    line-height: .7rem;
+    overflow-x: auto;
+}
+
+.z-register .zZC {
+    height: 1.2rem;
+    background: #fafafa;
+    border: none;
+    line-height: 1.35rem;
+}
+
+.z-register .zZC input {
+    width: 6rem;
+    height: .7rem;
+    border: none;
+    border-radius: .1rem;
+    vertical-align: middle;
+    line-height: .7rem;
+    background: #fff;
+    font-size: .32rem;
+}
+
+.z-register .zZC input {
+    background: #0a6693;
+    color: #fff;
+}
+
+.zVEL img {
+    width: .68rem;
+    height: .48rem;
+    vertical-align: middle;
+}
+
+#zDW {
+    height: 1rem;
+}
+
+#allmap {
+    width: 100%;
+}
+
+.zIMG {
+    width: 100%;
+    height: 100%;
+    background: url(../images/z-dingwei.png) no-repeat;
+    background-size: cover;
+}
+
+.dqld_div ul {
+    height: 3.4rem;
+}

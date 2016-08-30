@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>我的积分</title>
+    <link rel="stylesheet" type="text/css" href="publish/css/base.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/l_jifen.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="jf_header">
+            <div class="jf_tiao"></div>
+            <div class="jf_tiao2"></div>
+            <div class="jf_vip">
+                <div class="vip1">
+                    <strong>钻石会员</strong>
+                    <img src="images/vip2.png">
+                    <span>500</span>
+                </div>
+                <div class="vip2">
+                    <strong>钻石会员</strong>
+                    <img src="images/vip2.png">
+                    <span>1200</span>
+                </div>
+                <img class="jf_tx" src="images/toux.jpg">
+                <!-- <div class="vip3">
+                    <img src="images/vip3.png">
+                </div> -->
+                <div class="vip4">
+                    <strong>钻石会员</strong>
+                    <img src="images/vip4.png">
+                    <span>2000</span>
+                </div>
+                <div class="vip5">
+                    <strong>钻石会员</strong>
+                    <img src="images/vip4.png">
+                    <span>3000</span>
+                </div>
+            </div>
+            <h4>安徒生的童话</h4>
+            <div class="need">您当前属于<span style="color: #045075;font-size: .24rem;">金牌会员</span>,还差333积分提升会员特权</div>
+            <div class="jf_show">
+                <div class="show_box1">
+                    <div class="bt">当前积分<span><a href="#">积分规则</a></span></div>
+                    <div class="number">1700</div>
+                </div>
+                <div class="show_box2">
+                    <div class="bt">即将到期<span>2016.07.08</span></div>
+                    <div class="number">30</div>
+                </div>
+            </div>
+        </div>
+        <div class="jf_nav">
+            <div class="col-xs-4" style="color:#000;">积分任务</div>
+            <div class="col-xs-4">积分兑换</div>
+            <div class="col-xs-4">积分明细</div>
+        </div>
+        <div class="jf_content">
+            <a href="#" class="container jf_renwu">
+                <div class="col-xs-2"><img class="jf_tp" src="images/jf_tp1.png"></div>
+                <div class="col-xs-4 text-left tittle">注册会员</div>
+                <div class="col-xs-4 text-right fen">10积分</div>
+                <div class="col-xs-2 jiantou"><img class="jf_wc" src="images/jf_wc.png"></div>
+            </a>   
+            <a href="#" class="container jf_renwu">
+                <div class="col-xs-2"><img class="jf_tp" src="images/jf_tp2.png"></div>
+                <div class="col-xs-4 text-left tittle">注册产品</div>
+                <div class="col-xs-4 text-right fen">10积分</div>
+                <div class="col-xs-2 jiantou"><img class="jf_wc" src="images/jf_jt.png"></div>
+            </a>
+            <a href="#" class="container jf_renwu">
+                <div class="col-xs-2"><img class="jf_tp" src="images/jf_tp3.png"></div>
+                <div class="col-xs-4 text-left tittle">每日签到</div>
+                <div class="col-xs-4 text-right fen">5积分</div>
+                <div class="col-xs-2 jiantou"><img class="jf_wc" src="images/jf_jt.png"></div>
+            </a>  
+            <a href="#" class="container jf_renwu">
+                <div class="col-xs-2"><img class="jf_tp" src="images/jf_tp4.png"></div>
+                <div class="col-xs-4 text-left tittle">售后评价</div>
+                <div class="col-xs-4 text-right fen">10积分</div>
+                <div class="col-xs-2 jiantou"><img class="jf_wc" src="images/jf_jt.png"></div>
+            </a>
+            <a href="#" class="container jf_renwu">
+                <div class="col-xs-2"><img class="jf_tp" src="images/jf_tp5.png"></div>
+                <div class="col-xs-4 text-left tittle">分享送积分</div>
+                <div class="col-xs-4 text-right fen">10积分</div>
+                <div class="col-xs-2 jiantou"><img class="jf_wc" src="images/jf_jt.png"></div>
+            </a>       
+        </div>
+
+
+        <div class="jf_content" style="display: none">
+            <a href="#" class="container jf_duihuan">
+                <div class="col-xs-2"><img class="jf_tp" src="images/jf_dh_tp1.png" style="border-radius: 5px;"></div>
+                <div class="col-xs-4 text-left tittle">积分抽奖</div>
+                <div class="col-xs-4 text-right fen">10积分</div>
+                <div class="col-xs-2 jiantou"><img class="jf_wc" src="images/jf_jt.png"></div>
+            </a>
+            <a href="#" class="container jf_duihuan">
+                <div class="col-xs-2"><img class="jf_tp" src="images/jf_dh_tp2.png" style="border-radius: 5px;"></div>
+                <div class="col-xs-4 text-left tittle">敬请期待</div>
+                <div class="col-xs-4 text-right fen"></div>
+                <div class="col-xs-2 jiantou"><img class="jf_wc" src="images/jf_jt.png"></div>
+            </a>
+        </div>
+
+
+
+        <div class="jf_content" style="display: none">
+            <a href="#" class="jf_mingxi">
+                <div class="container">
+                    <p>2016年7月6日</p>
+                    <div class="col-xs-6 text-left jf_top">积分抽奖</div>
+                    <div class="col-xs-6 text-right jf_top">-10.00</div>
+                    <div class="col-xs-6 text-left jf_bottom">有效日期：2017-12-31</div>
+                    <div class="col-xs-6 text-right jf_bottom">余额：300.00</div>
+                </div>
+            </a>
+            <a href="#" class="jf_mingxi">
+                <div class="container">
+                    <p>2016年7月6日</p>
+                    <div class="col-xs-6 text-left jf_top">积分抽奖</div>
+                    <div class="col-xs-6 text-right jf_top">-10.00</div>
+                    <div class="col-xs-6 text-left jf_bottom">有效日期：2017-12-31</div>
+                    <div class="col-xs-6 text-right jf_bottom">余额：300.00</div>
+                </div>
+            </a>
+            <a href="#" class="jf_mingxi">
+                <div class="container">
+                    <p>2016年7月6日</p>
+                    <div class="col-xs-6 text-left jf_top">积分抽奖</div>
+                    <div class="col-xs-6 text-right jf_top">-10.00</div>
+                    <div class="col-xs-6 text-left jf_bottom">有效日期：2017-12-31</div>
+                    <div class="col-xs-6 text-right jf_bottom">余额：300.00</div>
+                </div>
+            </a>
+            <a href="#" class="jf_mingxi">
+                <div class="container">
+                    <p>2016年7月6日</p>
+                    <div class="col-xs-6 text-left jf_top">积分抽奖</div>
+                    <div class="col-xs-6 text-right jf_top">-10.00</div>
+                    <div class="col-xs-6 text-left jf_bottom">有效日期：2017-12-31</div>
+                    <div class="col-xs-6 text-right jf_bottom">余额：300.00</div>
+                </div>
+            </a>
+            <a href="#" class="jf_mingxi">
+                <div class="container">
+                    <p>2016年7月6日</p>
+                    <div class="col-xs-6 text-left jf_top">积分抽奖</div>
+                    <div class="col-xs-6 text-right jf_top">-10.00</div>
+                    <div class="col-xs-6 text-left jf_bottom">有效日期：2017-12-31</div>
+                    <div class="col-xs-6 text-right jf_bottom">余额：300.00</div>
+                </div>
+            </a>
+        </div> 
+    </div>
+    <script src="publish/js/jquery-1.8.3.min.js"></script>
+    <script src="publish/js/common.js"></script>
+</body>
+<script type="text/javascript">
+    $(function(){
+        $(".jf_nav .col-xs-4").each(function(index){
+            $(".jf_nav .col-xs-4").eq(index).click(function(){
+                $(this).css("color","#000").siblings().css("color","#646464");
+                $(".jf_content").eq(index).show().siblings(".jf_content").hide();
+            })
+        })
+    })
+</script>
+</html>

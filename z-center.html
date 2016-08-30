@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人资料</title>
+    <link rel="stylesheet" href="publish/css/base.css">
+    <link rel="stylesheet" href="publish/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/swiper.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/z-center.css">
+</head>
+
+<body>
+    <div id="z-wrap">
+
+        <!--   轮播    -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/z-center.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/z-center.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/z-center.png" alt=""></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!--  id头像  -->
+            <div class="z-idTx">
+                <div class="z-ID">ID：<span>13455588956</span></div>
+                <div class="z-TX"><img src="images/z-TX.png" alt=""></div>
+            </div>
+
+
+        </div>
+        <!--    公告    -->
+        <div class="z-gg">
+            公告：13455588956的用户升级为V5用户
+        </div>
+        <!--  功能  -->
+        <div class="z-Function">
+            <div class="col-xs-3">
+                <a href="z-product.html">
+                    <img src="images/zF1.png" alt="">
+                    <p class="zFun-tit">产品注册</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="l_qiandao.html">
+                    <img src="images/zF2.png" alt="">
+                    <p class="zFun-tit">签到</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="l_games.html">
+                    <img src="images/zF3.png" alt="">
+                    <p class="zFun-tit">游戏</p>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="#">
+                    <img src="images/zF4.png" alt="">
+                    <p class="zFun-tit">更多</p>
+                </a>
+            </div>
+        </div>
+        <!--    分类    -->
+        <div class="z-FL">
+
+            <div class="col-xs-4">
+                <a href="l_chanpin.html">
+                    <img src="images/zF5.png" alt="">
+                    <p class="zFL-tit">我的产品</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="z-personal.html">
+                    <img src="images/zF6.png" alt="">
+                    <p class="zFL-tit">个人资料</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    <img src="images/zF7.png" alt="">
+                    <p class="zFL-tit">我的积分</p>
+                </a>
+            </div>
+
+
+            <div class="col-xs-4">
+                <a href="z-VIP.html">
+                    <img src="images/zF8.png" alt="">
+                    <p class="zFL-tit">会员尊享</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    <img src="images/zF9.png" alt="">
+                    <p class="zFL-tit">商城</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    <img src="images/zF10.png" alt="">
+                    <p class="zFL-tit">试用新品</p>
+                </a>
+            </div>
+
+            <div class="col-xs-4">
+                <a href="#">
+                    <img src="images/zF11.png" alt="">
+                    <p class="zFL-tit">一键服务</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    <img src="images/zF12.png" alt="">
+                    <p class="zFL-tit">优惠券</p>
+                </a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">
+                    <img src="images/zF13.png" alt="">
+                    <p class="zFL-tit">消息中心</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <script src="publish/js/angular.min.js"></script>
+    <script src="publish/js/jquery-1.8.3.min.js"></script>
+    <script src="publish/js/swiper.min.js"></script>
+    <script src="publish/js/common.js"></script>
+    <script>
+        window.onload = function() {
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                autoplay: 5000,
+                loop: true,
+
+                // 如果需要分页器
+                pagination: '.swiper-pagination',
+
+            })
+        }
+
+    </script>
+</body>
+
+</html>

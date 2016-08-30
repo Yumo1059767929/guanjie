@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>每日签到</title>
+    <link rel="stylesheet" type="text/css" href="publish/css/base.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/l_games.css">
+</head>
+<style type="text/css">
+	.l_qd_top{
+		background: url(images/l_qd_bj.png) no-repeat;
+		height: 6.68rem;
+		background-size: 100%;
+	}
+	.top_box{
+		height: 5.77rem;
+		padding: 0rem .2rem;
+		color: #fff;
+		font-family: "微软雅黑";
+	}
+	.floatBox{
+		height: 1.1rem;
+	}
+	.qd_title{
+		float: left;
+		margin-top: .45rem;
+		font-size: .52rem;
+	}
+	.qd_time{
+		float: right;
+		margin-top: .38rem;
+		font-size: .2rem;
+	}
+	.qd_text{
+		clear: both;
+		width: 2.25rem;
+		margin: auto;
+		font-size: .2rem;
+		margin-top: .6rem;
+		line-height: .4	rem;
+	}
+	.dataer{
+		height: .9rem;
+		border-top: 1px solid #fff;
+		font-family: "微软雅黑";
+		color: #fff;
+	}
+	.dataer .swiper-wrapper .swiper-slide{
+		display: block;
+		float: left; 
+		height: .9rem;
+		border-left: 1px solid #fff;
+		text-align: center;
+		padding-top: .12rem;
+	}
+	.swiper-container {
+        width: 100%;
+        height: .9rem;
+        margin: 0 auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: .18rem;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	.dataer .swiper-wrapper .swiper-slide:first-child{
+		border: 0;
+	}
+	.dataer .swiper-wrapper .swiper-slide p{
+		text-align: center;
+		font-size: .24rem;
+		margin-bottom: 0;
+		color: #fff;
+	}
+	.dataer .swiper-wrapper .swiper-slide p:last-child{
+		font-size: .20rem;
+	}
+	.yellow{
+		color: #ffdc01;
+	}
+	.dot {
+	  animation: sploosh 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	  -webkit-animation: sploosh 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	  animation-iteration-count:infinite;
+	  -webkit-animation-iteration-count:infinite;
+	  background: transparent;
+	}
+	.dot2 {
+	  animation: sploosh2 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	  -webkit-animation: sploosh2 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	  animation-iteration-count:infinite;
+	  -webkit-animation-iteration-count:infinite;
+	  background: transparent;
+	}
+	.dot3 {
+		font-size: .28rem;
+		font-family: "微软雅黑";
+	  	animation: sploosh3 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	  	-webkit-animation: sploosh3 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+	  	animation-iteration-count:infinite;
+	    -webkit-animation-iteration-count:infinite;
+	  	background: rgba(255, 220, 1, 1);
+	}
+	.dot,.dot2,.dot3{
+	  height: 1.5rem;
+	  width: 1.5rem;
+	  color: #fff;
+	  line-height: 1.5rem;
+	  text-align: center;
+	  border-radius: 100%;
+	  position: absolute;
+	  z-index: 10;
+	}
+	@keyframes sploosh {
+	  0% {
+	    box-shadow: 0 0 0 0px rgba(255, 220, 1, 0.7);
+	    background: rgba(255, 220, 1, 0.7);
+	  }
+	  100% {
+	    box-shadow: 0 0 0 30px rgba(255, 220, 1, 0);
+	    background: rgba(255, 220, 1, 0);
+	  }
+	}
+	@-webkit-keyframes sploosh {
+	  0% {
+	    box-shadow: 0 0 0 0px rgba(255, 220, 1, 0.7);
+	    background: rgba(255, 220, 1, 0.7);
+	  }
+	  100% {
+	    box-shadow: 0 0 0 30px rgba(255, 220, 1, 0);
+	    background: rgba(255, 220, 1, 0);
+	  }
+	}
+
+	@keyframes sploosh2 {
+	  0% {
+	    box-shadow: 0 0 0 0px rgba(255, 220, 1, 0.7);
+	    background: rgba(255, 220, 1, 0.7);
+	  }
+	  100% {
+	    box-shadow: 0 0 0 20px rgba(255, 220, 1, 0);
+	    background: rgba(255, 220, 1, 0.3);
+	  }
+	}
+	@-webkit-keyframes sploosh2 {
+	  0% {
+	    box-shadow: 0 0 0 0px rgba(255, 220, 1, 0.7);
+	    background: rgba(255, 220, 1, 0.7);
+	  }
+	  100% {
+	    box-shadow: 0 0 0 20px rgba(255, 220, 1, 0);
+	    background: rgba(255, 220, 1, 0);
+	  }
+	}
+
+	@keyframes sploosh3 {
+	  0% {
+	    box-shadow: 0 0 0 0px rgba(255, 220, 1, 0.7);
+	    background: rgba(255, 220, 1, 1);
+	  }
+	  100% {
+	    box-shadow: 0 0 0 10px rgba(255, 220, 1, 0);
+	    background: rgba(255, 220, 1, 1);
+	  }
+	}
+	@-webkit-keyframes sploosh3 {
+	  0% {
+	    box-shadow: 0 0 0 0px rgba(255, 220, 1, 0.7);
+	    background: rgba(255, 220, 1, 1);
+	  }
+	  100% {
+	    box-shadow: 0 0 0 10px rgba(255, 220, 1, 0);
+	    background: rgba(255, 220, 1, 1);
+	  }
+	}
+
+</style>
+<body>
+    <div class="wrap" style="background:#fff;">
+    	<div class="l_qd_top">
+			<div class="top_box">
+				<div class="floatBox">
+					<div class="qd_title">遇见最美</div>
+					<div class="qd_time">2016.07.26</div>
+				</div>
+				<div class="qd_text">我遇见谁 会有怎样的对白我等的人 他在多远的未来我听见风来自地铁和人海我排着队 拿着爱的号码牌我往前飞 飞过一片时间海我们也曾在爱情里受伤害我看着路 梦的入口有点窄我遇见你是最美丽的意外总有一天 我的谜底会揭开</div>
+			</div>
+			<div class="dataer">
+				<!-- Swiper -->
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+				            <p>3</p>
+							<p>未签到</p>
+						</div>
+			        </div>
+			    </div>
+			</div>
+    	</div>
+    	<div style="height:1.5rem;width:1.5rem;border-radius:100%;position: relative;margin:.8rem auto; ">
+		    <div class="dot">
+		      <div class="dot2">
+		          <div class="dot3">每日签到</div>
+		      </div>
+		    </div>
+		</div>	
+    </div>
+    <script src="publish/js/jquery-1.8.3.min.js"></script>
+    <script src="publish/js/swiper.min.js"></script>
+    <script src="publish/js/common.js"></script>
+    <script type="text/javascript">
+	    window.onload = function(){
+	    	var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        slidesPerView: 5,
+		        spaceBetween: 0,
+		        freeMode: true
+		    });
+		}
+		$(function(){
+			$.ajax({'asd.php',function(){
+
+			}},json)
+			for(i = 0;i<20;i++){
+				$(".swiper-wrapper").append('<div class="swiper-slide"><p>'+i+'</p><p>'+i+'</p></div>')
+			}
+
+		})
+    </script>
+</body>
+
+</html>

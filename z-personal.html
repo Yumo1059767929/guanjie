@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人资料</title>
+    <link rel="stylesheet" href="publish/css/base.css">
+    <link rel="stylesheet" href="publish/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="publish/css/swiper.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/z-personal.css">
+    <link href="css/area.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div id="z-wrap">
+
+        <!--   轮播    -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/z-banner1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/z-banner1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/z-banner1.png" alt=""></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!--    表单提交    -->
+        <form action="">
+            <ul class="z-register">
+                <li>
+                    <div class="col-xs-3">昵称</div>
+                    <div class="col-xs-7 z-name">
+                        <input id="z-userName" type="text" placeholder="请输入昵称">
+                    </div>
+                    <div class="col-xs-2 zF">
+                        <input id="file_upload" type="file" />
+                        <div class="image_container">
+                            <img id="preview" width="60" height="60" alt="头像" src="images/z-touxiang.png">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-xs-3">手机号</div>
+                    <div class="col-xs-7 z-number">
+                        <input id="z-userNumber" type="text" placeholder="请输入手机号码">
+                    </div>
+                    <div class="col-xs-2"></div>
+                </li>
+                <li>
+                    <div class="col-xs-3">验证码</div>
+                    <div class="col-xs-6 z-yzm">
+                        <input id="z-userWord" type="text" placeholder="请输入手机验证码">
+                    </div>
+                    <div class="col-xs-3">
+                        <input type="button" id="btn" class="zGET" value="获取验证码" />
+                    </div>
+                </li>
+                <li>
+                    <div class="col-xs-3">性别</div>
+                    <div class="col-xs-7 zSEX">
+                        男
+                        <input type="radio" name="rel" checked="checked"> 女
+                        <input type="radio" name="rel">
+                    </div>
+                    <div class="col-xs-2"></div>
+                </li>
+                <li>
+                    <div class="col-xs-3">地址</div>
+                    <div class="col-xs-9">
+                        <div id="addAddress">
+                            <div class="address_input">
+                                <input class="address_input1" type="text" placeholder="请选择您所在的省市" id="shengshi" onClick="getProvinceBuy()" readonly="readonly">
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="col-xs-3">详细地址</div>
+                    <div class="col-xs-7 zAddress">
+                        <input type="text" id="myAddress" placeholder="请输入您的详细住址">
+                    </div>
+                    <div class="col-xs-2" id="zDW">
+                        <div class="zIMG"></div>
+                        <div id="allmap">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col-xs-3">等级</div>
+                    <div class="col-xs-7 zVEL">
+                        <img src="images/z-dengji.png" alt="">
+                    </div>
+                    <div class="col-xs-2"></div>
+                </li>
+                <li class="zZC">
+                    <input class="zWCZC" type="button" value="保存">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <script type="text/javascript" src="publish/js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/area.js"></script>
+    <script src="publish/js/angular.min.js"></script>
+    <script src="publish/js/jquery-1.8.3.min.js"></script>
+    <script src="publish/js/swiper.min.js"></script>
+    <script src="publish/js/common.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=daPzuroMkYGMOxqrpiYF3opn"></script>
+    <script src="js/z-personal.js"></script>
+    <script src="js/z-register.js"></script>
+    <script>
+        window.onload = function() {
+            /*轮播*/
+            var mySwiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                autoplay: 5000,
+                loop: true,
+
+                // 如果需要分页器
+                pagination: '.swiper-pagination',
+
+            });
+
+            /*定位*/
+            var zDW = document.getElementById("zDW");
+            var myAddress = document.getElementById("myAddress");
+            zDW.onclick = function() {
+                var jing;
+                var wei;
+
+                //获取经纬度
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    alert("该浏览器不支持获取地理位置。");
+                }
+
+                function showPosition(position) {
+                    jing = position.coords.latitude;
+                    wei = position.coords.longitude;
+                }
+
+                // 百度地图API功能
+                var map = new BMap.Map("allmap");
+                var point = new BMap.Point(jing, wei);
+                map.centerAndZoom(point, 12);
+
+                var geolocation = new BMap.Geolocation();
+                geolocation.getCurrentPosition(function(r) {
+                    if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+                        var mk = new BMap.Marker(r.point);
+                        map.addOverlay(mk);
+                        map.panTo(r.point);
+                        // alert('您的位置：'+r.point.lng+','+r.point.lat);
+                        var geoc = new BMap.Geocoder();
+                        var pt = r.point;
+                        geoc.getLocation(pt, function(rs) {
+                            var addComp = rs.addressComponents;
+                            myAddress.value = addComp.city + addComp.district + addComp.street + addComp.streetNumber;
+                        });
+                    } else {
+                        alert('failed' + this.getStatus());
+                    }
+                }, {
+                    enableHighAccuracy: true
+                })
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+#z-wrap {
+    width: 100%;
+    height: 100%;
+    background: #fafafa;
+}
+
+.z-register {
+    width: 100%;
+    height: 100%;
+}
+
+.z-register li {
+    width: 100%;
+    height: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ededed;
+    padding-left: .16rem;
+    font-size: .24rem;
+}
+
+.z-register li div {
+    padding: 0;
+    line-height: 1rem;
+    color: #3c3c3c;
+}
+
+.z-register li img {
+    width: 1.19rem;
+    height: .97rem;
+}
+
+.z-register li input {
+    width: auto;
+    height: .7rem;
+    vertical-align: middle;
+    line-height: .7rem;
+    border: none;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #e1e1e1;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #e1e1e1;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #e1e1e1;
+}
+
+.z-register .z-sys {
+    display: inline-block;
+    width: 100%;
+    height: 1rem;
+    background: url(../images/z-saoyisao.png) center;
+    background-size: contain;
+    vertical-align: top;
+}
+
+.z-register .z-li2 {
+    margin-bottom: .2rem;
+    border: none;
+}
+
+.z-register .z-li4 {
+    margin-bottom: .4rem;
+    border: none;
+}
+
+.z-register .zZC {
+    height: 1.2rem;
+    background: #fafafa;
+    border: none;
+    line-height: 1.2rem;
+}
+
+.z-register .zZC input {
+    width: 6rem;
+    height: .7rem;
+    border: none;
+    border-radius: .1rem;
+    vertical-align: middle;
+    line-height: .7rem;
+    background: #fff;
+    font-size: .32rem;
+}
+
+.z-register .zZC input.zWCZC {
+    background: #0a6693;
+    color: #fff;
+}
+
+.z-register .zZC input.zJXZC {
+    color: #0a6693;
+    border: 1px solid #82b0c7;
+}
+
+.z-register .zBz {
+    height: 2rem;
+    font-size: .2rem;
+    color: #a0aab1;
+    border: none;
+    line-height: .4rem;
+    padding: .1rem .16rem;
+    background: #fafafa;
+}
+
+.z-register .zBz p {
+    margin-bottom: 0;
+}

@@ -1,0 +1,320 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.wrap{
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #fafafa;
+}
+.jf_header{
+	height: 4.16rem;
+	background:url(../images/jf_bj.png) no-repeat;
+	background-size: 100% 100%;
+}
+.jf_tiao{
+	width:3.5rem;
+	height: .1rem;
+	background: #ffe400;
+	position: absolute;
+	top: .97rem;
+	left: 0;
+	z-index: 1;
+}
+.jf_tiao2{
+	width:100%;
+	height: .1rem;
+	background: #045075;
+	position: absolute;
+	top: .97rem;
+	left: 0;
+	z-index: 0;
+}
+.jf_vip{
+	height: 1.96rem;
+}
+.jf_vip strong{
+	font-size: .2rem;
+	font-weight: normal;
+	font-family: "微软雅黑";
+	color: #045075;
+}
+.vip1{
+	width:.85rem;
+	position: absolute;
+	top:.35rem;
+	left: 0rem;
+	z-index: 4;
+	display: block;
+}
+.vip2{
+	width:.85rem;
+	position: absolute;
+	top:.35rem;
+	left: 1.1rem;
+	z-index: 4;
+	display: block;
+}
+/*.vip3{
+	width:.82rem;
+	position: absolute;
+	top:.58rem;
+	left: 2.6rem;
+	z-index: 4;
+	display: block;
+}*/
+.vip4{
+	width:.85rem;
+	position: absolute;
+	top:.35rem;
+	right: 1.1rem;
+	z-index: 4;
+	display: block;
+}
+.vip1 span,.vip2 span,.vip3 span,.vip4 span,.vip5 span{
+	display: block;
+	color: #045075;
+	font-size: .16rem;
+	text-align: center;
+	margin-top: .1rem;
+}
+.vip1 img{
+	width: .44rem;
+	height: .52rem;
+	display: block;
+	margin:auto;
+	margin-top: .1rem;
+}
+.vip2 img{
+	width: .44rem;
+	height: .52rem;
+	display: block;
+	margin:auto;
+	margin-top: .1rem;
+}
+.vip4 img{
+	width: .44rem;
+	height: .52rem;
+	display: block;
+	margin:auto;
+	margin-top: .1rem;
+}
+.vip5 img{
+	width: .44rem;
+	height: .52rem;
+	display: block;
+	margin:auto;
+	margin-top: .1rem;
+}
+.vip5{
+	width:.85rem;
+	position: absolute;
+	top:.35rem;
+	right: 0rem;
+	z-index: 4;
+	display: block;
+}
+.jf_tx{
+	width: 1.4rem;
+	height: 1.4rem;
+	display: block;
+	border-radius: .7rem;
+	border: .03rem solid #ffe400;
+	position: absolute;
+	top: .27rem;
+	left: 2.48rem;
+	z-index: 3;
+	box-shadow:0 0 .5rem #ffe400,0 0 .1rem #ffe400,0 0 .15rem #ffe400;
+}
+h4{
+	margin: 0;
+	text-align: center;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: .24rem;
+}
+.need{
+	padding: .08rem .3rem;
+	background: rgba(255,255,255,.3);
+	text-align: center;
+	display: block;
+	width:5.4rem;
+	margin: auto;
+	font-size: .2rem;
+	margin-top: .2rem;
+	border-radius: .1rem;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+.jf_show{
+	height: 1.1rem;
+	border-top: 1px solid #fff;
+	margin-top: .2rem;
+	color: #fff;
+	line-height: .5rem;
+}
+.show_box1,.show_box2{
+	float: left;
+	width: 50%;
+	height: 1.1rem;
+	padding-left: .45rem;
+}
+.show_box2{
+	border-left: 1px solid #fff;
+}
+.bt{
+	font-size: .24rem;
+	font-family: "微软雅黑";
+	font-weight: 500;
+}
+.bt span a{
+	color: #7692a6;
+}
+.bt span a:hover{
+	text-decoration: none;
+	color: #7692a6;
+}
+.bt span{
+	font-weight: normal;
+	margin-left: .4rem;
+	background: #045075;
+	border-radius: 10px;
+	padding: .05rem;
+	color: #7692a6;
+}
+.number{
+	font-size: .32rem;
+	color:#ffe400; 
+}
+.container{
+	max-width: 640px;
+}
+.jf_nav{
+	height: .85rem;
+	line-height: .85rem;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	margin-top: .2rem;
+	background: #fff;
+	color: #646464;
+}
+.jf_nav .col-xs-4{
+	height: .85rem;
+	line-height: .85rem;
+	text-align: center;
+	font-size: .28rem;
+	font-weight: 500;
+	border-left: 1px solid #dedede;
+	font-family: "微软雅黑";
+}
+.jf_nav .col-xs-4:first-child{
+	border-left: 0;
+}
+.jf_content{
+	background:#fff;
+	font-family: "微软雅黑";
+}
+.jf_renwu{
+	display: block;
+	height:1.1rem;
+	line-height: 1.1rem;
+	border-bottom: 1px solid #dedede;
+	color: #646464;
+}
+.jf_renwu .col-xs-2{
+	padding: 0px;
+}
+.jf_renwu .jf_tp{
+	width: .58rem;
+	height: .58rem;
+	border-radius: .29rem;
+}
+.jf_renwu .jf_wc{
+	height: .48rem;
+	width: .48rem;
+
+}
+.jf_renwu .jiantou{
+	padding-right: 0;
+	text-align: right;
+}
+.jf_renwu .tittle{
+	padding-right: 0;
+	font-size: .32rem;
+	font-weight: 500;
+	padding-left: 0px;
+}
+.jf_renwu .fen{
+	color: #2aa6e2;
+	font-size: .24rem;
+	padding-right: 0;
+}
+
+
+.jf_duihuan{
+	display: block;
+	height:1.1rem;
+	line-height: 1.1rem;
+	border-bottom: 1px solid #dedede;
+	color: #646464;
+}
+.jf_duihuan .jf_tp{
+	width: .58rem;
+	height: .58rem;
+	border-radius: .29rem;
+}
+.jf_duihuan .jf_wc{
+	height: .48rem;
+	width: .48rem;
+
+}
+.jf_duihuan .jiantou{
+	padding-right: 0;
+	text-align: right;
+}
+.jf_duihuan .tittle{
+	padding-right: 0;
+	font-size: .32rem;
+	font-weight: 500;
+	padding-left: 0px;
+}
+.jf_duihuan .fen{
+	color: #2aa6e2;
+	font-size: .24rem;
+	padding-right: 0;
+}
+
+
+.jf_mingxi{
+	color: #323232;
+	height: 1.85rem;
+	display: block;
+	border-bottom: 1px solid #dedede;
+	padding-top: .2rem;
+}
+.jf_mingxi p{
+	color: #fff;
+	width: 1.5rem;
+	background: #1174a5;
+	padding: .05rem;
+	font-size: .2rem;
+	border-radius: 5px;
+	text-align: center;
+}
+.jf_mingxi:hover{
+	color: #323232;
+	text-decoration: none;
+}
+.jf_mingxi .col-xs-6{
+	padding: 0;
+}
+.jf_top{
+	font-size: .24rem;
+}
+.jf_bottom{
+	font-size: .20rem;
+	margin-top: .3rem;
+}

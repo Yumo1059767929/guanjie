@@ -1,0 +1,43 @@
+.dqld_div {
+    width: 100%;
+    height: 0;
+    position: relative;
+}
+
+.dqld_div ul {
+    width: 100%;
+    background: #fff;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    border-top: 2px double #000;
+}
+
+.dqld_div ul li {
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #cccccc;
+    padding-left: .2rem;
+}
+
+#addAddress {
+    width: 100%;
+    height: 100%;
+}
+
+#addAddress .address_input {
+    width: 100%;
+    height: 100%;
+}
+
+#addAddress .address_input1 {
+    width: 4.5rem;
+    height: .7rem;
+    border: none;
+    overflow-x: auto;
+}
+
+span#fonttest {
+    display: none;
+}
